@@ -17,27 +17,6 @@
         environment: 'euw1',
         deploymentId: 'cebedec8-a3b5-4540-8677-ecbf059bdf14'
       });
-	    Genesys("command", "Journey.pageview", {
-	    customAttributes: {
-		    insurance_had: "No",
-		    age: "63",
-		    givenName: "Marc",
-		    familyName: "Sassoon",
-		    email: "marc.sassoon@genesys.com"
-	    },
-    });
-	function onloadset() {
-		 Genesys("command", "Journey.record", {
-	    eventName: "cover_details",
-	    customAttributes: {
-		    insurance_had: "No",
-		    age: "63",
-		    givenName: "Marc",
-		    familyName: "Sassoon",
-		    email: "marc.sassoon@genesys.com"
-	    },
-    });
-	}
 </script>
 <style>
 .button {
