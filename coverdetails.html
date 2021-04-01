@@ -17,6 +17,16 @@
         environment: 'euw1',
         deploymentId: 'cebedec8-a3b5-4540-8677-ecbf059bdf14'
       });
+	    Genesys("command", "Journey.record", {
+	    eventName: "Cover_Details",
+	    customAttributes: {
+		    insurance_had: "No",
+		    age: "63",
+		    givenName: "Marc",
+		    familyName: "Sassoon",
+		    email: "marc.sassoon@genesys.com"
+	    },
+    });
     </script>
 	<script>
 	(function onloadset() {
