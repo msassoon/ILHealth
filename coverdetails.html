@@ -18,7 +18,19 @@
         deploymentId: 'cebedec8-a3b5-4540-8677-ecbf059bdf14'
       });
     </script>
-	
+	<script>
+	(function onloadset() {
+		 Genesys("command", "Journey.record", {
+	    eventName: "Cover_Details",
+	    customAttributes: {
+		    insurance_had: "No",
+		    age: "63",
+		    givenName: "Marc",
+		    familyName: "Sassoon",
+		    email: "marc.sassoon@genesys.com"
+	    },
+    });
+</script>
 <style>
 .button {
 top:450px;right:-15px;position:fixed;z-index:99999;padding:10px;color:#000000;border:1px solid #000000;transform: rotate(-90deg);height:43.5px;font-weight:700;
@@ -35,18 +47,5 @@ top:450px;right:-15px;position:fixed;z-index:99999;padding:10px;color:#000000;bo
   <area shape="rect" coords="288,74,638,123" alt="Get Quote" href="getquote.html">
 </map>
 
-<script>
-	(function onloadset() {
-		 Genesys("command", "Journey.record", {
-	    eventName: "Cover_Details",
-	    customAttributes: {
-		    insurance_had: "No",
-		    age: "63",
-		    givenName: "Marc",
-		    familyName: "Sassoon",
-		    email: "marc.sassoon@genesys.com"
-	    },
-    });
-</script>
 </body>
 </html>
